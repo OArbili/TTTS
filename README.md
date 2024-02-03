@@ -1,6 +1,6 @@
 # TTTS: Tree Test Time Simulation
 
-TTTS (Tree Test Time Simulation) is an innovative implementation aimed at enhancing the robustness of decision trees against adversarial examples, based on the groundbreaking research presented in the paper "TTTS: Tree Test Time Simulation for Enhancing Decision Tree Robustness Against Adversarial Examples". This project encapsulates the practical application of the research, providing a robust, adaptable solution for improving decision tree models against adversarial attacks.
+Tree Test Time Simulation (TTTS) is an innovative methodology developed to enhance the robustness of decision trees against adversarial examples. The approach is based on the paper titled 'TTTS: Tree Test Time Simulation for Enhancing Decision Tree Robustness Against Adversarial Examples,' authored by Cohen Seffi, Arbili Ofir, Mirsky Yisroel, and Rokach Lior, and published in the proceedings of the AAAI 2024 conference. TTTS embodies the practical application of these research insights, offering a reliable and adaptable solution to improve the resistance of decision tree models to adversarial attacks.
 
 ## Table of Contents
 
