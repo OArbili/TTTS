@@ -46,7 +46,7 @@ The TTTS project is organized as follows to ensure ease of use, reproducibility 
 
 ## Usage
 
-After installing TTTS, you can seamlessly integrate it into your machine learning pipeline. The TTTS classifier enhances traditional decision tree classifiers by introducing robustness against adversarial attacks. Follow these steps to use it in your project:
+After installing TTTS, you can seamlessly integrate it into your machine learning pipeline. The TTTS classifier enhances traditional decision tree classifiers by introducing robustness against adversarial attacks. Below is a straightforward code demonstration:
 
 ```python
 from TTTS import MonteCarloDecisionTreeClassifier
