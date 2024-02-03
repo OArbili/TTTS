@@ -55,6 +55,7 @@ After installing TTTS, you can seamlessly integrate it into your machine learnin
 ## Experiments
 Navigate to the experiments/ folder to view or run the experiments conducted as part of the research. This section includes scripts for reproducing the results presented in the paper, as well as detailed analysis of the TTTS performance under various conditions.
 
+## Citation
 @inproceedings{ttts2024,
   title={TTTS: Tree Test Time Simulation for Enhancing Decision Tree Robustness Against Adversarial Examples},
   author={Cohen Seffi , Arbili Ofir , Mirsky Yisroel , Rokach Lior},
@@ -62,4 +63,8 @@ Navigate to the experiments/ folder to view or run the experiments conducted as 
   year={2024}
 }
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+## License
+This project is licensed under the MIT License.
+
+## Contact
+
