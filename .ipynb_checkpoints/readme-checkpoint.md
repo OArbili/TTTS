@@ -29,7 +29,7 @@ Decision trees, while widely used for tabular data learning tasks, are vulnerabl
 ## Installation
 
 TTTS can be easily installed using pip:
-```bash
+```python
 pip install TTTS
 ```
 
