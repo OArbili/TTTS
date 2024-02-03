@@ -38,9 +38,9 @@ pip install TTTS
 The TTTS project is organized as follows to ensure ease of use, reproducibility of results, and a clear understanding of the project's components:
 
 - `code/`: Contains the implementation of the TTTS algorithm.
-  - `TTTSClassifier.py`: The main class implementing the TTTS methodology. This classifier introduces a probabilistic approach to decision-making in decision trees, using Monte Carlo simulations.
+  - `MonteCarloDecisionTreeClassifier.py`: The main class implementing the TTTS methodologies. This classifier introduces a probabilistic approach to decision-making in decision trees, using Monte Carlo simulations.
 - `data/`: Includes the 50 datasets used for experiments. These datasets are utilized to demonstrate the effectiveness and robustness of the TTTS methodology against adversarial attacks.
-- `experiments/`: Contains scripts and notebooks for running the experiments outlined in the paper. This folder allows users to reproduce the results and to understand the impact of TTTS on model performance and robustness.
+- `experiments/`: Contains notebooks for running the experiments outlined in the paper. This folder allows users to reproduce the results and to understand the impact of TTTS on model performance and robustness.
 - `paper/`: Includes a PDF file of the original research article. This provides users with direct access to the theoretical background, empirical analysis, and insights derived from the research.'
 
 
