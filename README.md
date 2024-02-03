@@ -48,9 +48,32 @@ The TTTS project is organized as follows to ensure ease of use, reproducibility 
 
 After installing TTTS, you can seamlessly integrate it into your machine learning pipeline. The TTTS classifier enhances traditional decision tree classifiers by introducing robustness against adversarial attacks. Follow these steps to use it in your project:
 
-1. **Importing the Classifier**:
-   Import the TTTS classifier from the package into your Python script.
+```python
+from TTTS import MonteCarloDecisionTreeClassifier
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import roc_auc_score
 
+# Load the breast cancer dataset
+bc = load_breast_cancer()
+X, y = bc.data, bc.target
+
+# Split the dataset into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=17)
+
+# Initialize the MonteCarloDecisionTreeClassifier with prob_type depth
+clf = MonteCarloDecisionTreeClassifier(prob_type='depth')
+
+# Train the classifier and make predictions
+clf.fit(X_train, y_train)
+y_pred = clf.predict_proba(X_test)
+
+# Evaluate the classifier using AUC
+auc = roc_auc_score(y_test, y_pred[:,1])
+print(f'AUC: {auc}')
+```
+
+The prob_type parameter can be one of the following: ['fixed', 'depth', 'certainty', 'agreement', 'distance', 'confidence'].
   
 ## Experiments
 Navigate to the experiments/ folder to view or run the experiments conducted as part of the research. This section includes scripts for reproducing the results presented in the paper, as well as detailed analysis of the TTTS performance under various conditions.
