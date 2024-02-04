@@ -11,12 +11,12 @@ class MonteCarloRandomForestClassifier(RandomForestClassifier):
     the proceedings of the AAAI 2024 conference.
     """
 
-    def __init__(self, prob_type="fixed", *args, **kwargs):
+    def __init__(self, prob_type="fixed", n_estimators=100, criterion='gini', max_depth=None, min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_features='sqrt', max_leaf_nodes=None, min_impurity_decrease=0.0, bootstrap=True, oob_score=False, n_jobs=None, random_state=None, verbose=0, warm_start=False, class_weight=None, ccp_alpha=0.0, max_samples=None, monotonic_cst=None):
         """
         Initializes the MonteCarloRandomForestClassifier.
         :param prob_type: The type of probability calculation method to use for determining the traversal path at each node.
         """
-        super().__init__(*args, **kwargs)
+        super().__init__(n_estimators=100, criterion='gini', max_depth=None, min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_features='sqrt', max_leaf_nodes=None, min_impurity_decrease=0.0, bootstrap=True, oob_score=False, n_jobs=None, random_state=None, verbose=0, warm_start=False, class_weight=None, ccp_alpha=0.0, max_samples=None, monotonic_cst=None)
         if prob_type not in [
             "fixed",
             "depth",
